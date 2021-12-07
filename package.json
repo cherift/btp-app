@@ -1,0 +1,27 @@
+{
+  "name": "btp-app",
+  "version": "1.0.0",
+  "description": "application de gestion de chantier",
+  "main": "server.js",
+  "scripts": {
+    "watch": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cherift/btp-mobile-app.git"
+  },
+  "author": "Abdoulaye Chérif Touré & Eldin Smakic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cherift/btp-mobile-app/issues"
+  },
+  "homepage": "https://github.com/cherift/btp-mobile-app#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
