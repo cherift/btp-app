@@ -2,7 +2,9 @@ const express = require('express');
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 const morgan = require('morgan');
+
 const userRouter = require('./src/api/user');
+const companyRouter = require('./src/api/company');
 
 dotenv.config();
 
@@ -18,6 +20,7 @@ app.use(morgan('common'));
 app.use(express.json());
 
 app.use('/user', userRouter);
+app.use('/company', companyRouter);
 
 // render 404 page
 app.use(function(req, res, next) {
