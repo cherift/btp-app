@@ -1,0 +1,84 @@
+@import 'variables';
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: .3s ease;
+}
+
+html {
+    font-size: 90%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.container {
+    position: relative;
+    width: 99vw;
+    height: 99vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $bgColor;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.icon {
+    font-size: $h2FontSize;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.flex {
+    display: grid;
+    align-items: center;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px $inputColor;
+    padding: .8rem 1rem;
+    color: $textColor;
+
+    .icon {
+        margin-left: .5rem;
+    }
+
+    &:hover {
+        background: $paleGreen;
+        color: $primaryColor;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+
+    &-track {
+        background: $bgColor;
+
+        &:hover {
+            background: $paleGreen;
+        }
+    }
+}
